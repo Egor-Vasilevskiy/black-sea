@@ -1,5 +1,7 @@
 # lesson-6
 
+https://smailent.github.io/lesson-6/
+
 # Домашнее задание к уроку 6
 
 ### Верстаем макет.
