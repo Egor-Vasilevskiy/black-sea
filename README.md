@@ -1,6 +1,6 @@
 # black-sea
 
-https://smailent.github.io/lesson-6/
+https://smailent.github.io/black-sea/
 
 # Домашнее задание к уроку 6
 
