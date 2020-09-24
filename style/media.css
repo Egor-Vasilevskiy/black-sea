@@ -1,0 +1,86 @@
+@media (max-width: 767px) {
+    .header__logo {
+        font-size: calc(24px + 27.2 * ((100vw - 320px) / 1280));
+    }
+
+    .header__link {
+        font-size: calc(16px + 3.4 * ((100vw - 320px) / 1280));
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+   .promo__title {
+       font-size: calc(13px + 21.7 * ((100vw - 320px) / 1280));
+   }
+
+   .promo__btn {
+       font-size: calc(15px + 10.5 * ((100vw - 320) / 1280));
+   }
+
+   .main h3 {
+       font-size: calc(15px + 10.5 * ((100vw - 320) / 1280));
+   }
+
+   .main p {
+       font-size: calc(11px + 2.1 * ((100vw -320) / 1280));
+   }
+
+    .dhavan__name span {
+        font-size: calc(14px + 6.3 * ((100vw -320) / 1280));
+    }
+    
+    .testimonial__review {
+        font-size: calc(14px + 2.8 * ((100vw - 320) / 1280));
+    }
+
+    .footer__copyright {
+        font-size: calc(14px + 0.7 * ((100vw - 320) / 1280));
+    }
+}
+
+@media (max-width: 320px) {
+    .header__logo {
+        font-size: 24px;
+    }
+
+    .header__link {
+        font-size: 16px;
+    }  
+
+   .promo__title {
+       font-size: 13px;
+   }
+
+   .promo__btn {
+       font-size: 15px;
+   }
+
+   .main h3 {
+       font-size: 15px;
+   }
+
+   .main p {
+       font-size: 11px;
+   }
+
+    .dhavan__name span {
+        font-size: 14px;
+    }
+    
+    .testimonial__review {
+        font-size: 14px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px){
+    .header__burger {
+        display: flex;
+    }
+}
+

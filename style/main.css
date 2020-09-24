@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.container {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header {
+    background: #55ADB7;
+    opacity: 0.83;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.header__logo {
+    font-family: 'Cherry Swash', cursive;
+    color: #ffffff;
+    margin: 28px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header__link {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: calc(18px + 1 * (100vw / 1280));
+}
+
+.header__link:not(:last-child){
+    margin-right: 30px;
+}
+.header__link:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -15px;
+    width: 1px;
+    height: 14px;
+    background-color: #fff;
+    transform: rotate(15deg);
+}
+
+.header__burger {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.menu__icon {
+    display: block;
+    position: relative;
+    background: white;
+    width: 90%;
+    height: 4px;
+    transition: 0.4s;
+}
+
+.menu__icon::before {
+  position: absolute;
+  content: "";
+  background: white;
+  width: 100%;
+  height: 4px;
+  top: -8px;
+  right: 0px
+}
+
+.menu__icon::after {
+    position: absolute;
+    content: "";
+    background: white;
+    width: 100%;
+    height: 4px;
+    top: 8px;
+    left: 0;
+}
+
+/* ==============================PROMO========================================= */
+
+.promo {
+    background: url(../img/background_promo.png) center no-repeat;
+}
+
+.promo__title {
+    width: 51%;
+    font-size: calc(13px + 31 * (100vw / 1280));
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 130px;
+    padding-bottom: 48px;
+}
+
+.promo__btn {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    font-size: calc(15px + 15 * (100vw / 1280));
+}
+
+.promo__btn:hover {
+    color: brown;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    padding-top: 121px;
+    margin-bottom: 20px;
+}
+
+.points {
+    width: 9px;
+    height: 9px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 6px;
+}
+
+.points:hover {
+    background: brown;
+}
+
+/*==============================MAIN=================================== */
+
+.main h3 {
+    margin-top: 90px;
+    width: 53%;
+    color: #4C505D;
+    font-size: 30px;
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-size: calc(15px + 15 * (100vw / 1280));
+}
+
+.main p {
+    font-size: 14px;
+    width: 67%;
+    font-size: calc(11px + 3 * (100vw / 1280));
+    padding-bottom: 70px;
+}
+
+.main__list--icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 30%;
+    padding-bottom: 9%;
+}
+
+.main__icon:nth-child(1) {
+    min-width: 55px;
+    min-height: 55px;
+    background: url(../img/icon_basket.png) center no-repeat;
+}
+
+.main__icon:nth-child(2) {
+    min-width: 55px;
+    min-height: 55px;
+    background: url(../img/icon_land.png) center no-repeat;
+}
+
+.main__icon:nth-child(3) {
+    min-width: 55px;
+    min-height: 55px;
+    background: url(../img/icon_bag.png) center no-repeat;
+}
+
+/* ===========TESTIMONIAL=================================================================== */
+
+.testimonial {
+    background: #00D089;
+    padding: 97px 0;
+}
+
+.testimonial__dhavan {
+    border-radius: 50%;
+}
+
+.dhavan__name {
+    position: relative;
+}
+
+.dhavan__name span {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    color: #e4e4e4;
+    font-size: calc(14px + 9 * (100vw / 1280));
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.testimonial__pic--wrap {
+    position: relative;
+}
+
+.testimonial__pic--wrap::after {
+    content: "„";
+    position: absolute;
+    font-size: 4cm;
+    line-height: 18px;
+    left: 144px;
+    bottom: 110px;
+    font-weight: bold;
+    opacity: 0.2;
+}
+
+.testimonial__review {
+    padding-top: 62px;
+    font-size: calc(14px + 4 * (100vw / 1280));
+    max-width: 70.4%;
+    text-align: left;
+    color: #ffffff;
+}
+
+/*=============CONTACT====================================================*/
+
+.contact {
+    background: url(../img/background_contact.png) center no-repeat;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 431px;
+    height: 431px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 50%;
+    opacity: 0.85;
+    border: 2px groove;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form__user--name {
+    font-size: calc(10px + 4 * (100vw /1280));
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.form__user--email {
+    font-size: calc(10px + 4 * (100vw /1280));
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.form__user--message {
+    font-size: calc(10px + 4 * (100vw /1280));
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.form__submit {
+    display: flex;
+    width: 67px;
+    height: 67px;
+    margin-bottom: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #00d089;
+}
+
+/* ===================FOOTER================================================================== */
+
+footer {
+    background: #00D089;
+}
+
+.footer__copyright {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: calc(14px + 1 * (100vw / 1280));
+}
