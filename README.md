@@ -1,4 +1,4 @@
-# lesson-6
+# black-sea
 
 https://smailent.github.io/lesson-6/
 
